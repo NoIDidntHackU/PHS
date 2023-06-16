@@ -5,10 +5,12 @@ read from Distance sensor (Jonboan?):
 
 
 
+************************************************
+
 write to 8 digit 7 segment display (NoIDidntHackU):
 Schematic:
 schematic7sgmnt.png
-
+ (for some reason doesn't work, not too sure why. maybe you could check it?)
 ********************REQUIRED********************
 MicroPython library for MAX7219 + 8 x 7digit display boards.
 
@@ -47,7 +49,7 @@ display = max7219_8digit.Display(spi, ss)
 display.write_to_buffer('12345678')
 display.display()
 
-
+************************************************
 There is also a write_to_buffer_with_dots method, which attempts to use the display decimal points properly. Note that there are some rather big bugs in this at the moment, do not put dots at the start of the string, or put two of them in a row.
 
 # Connections:
@@ -65,3 +67,5 @@ ss = Pin(5, Pin.OUT)
 display = max7219_8digit.Display(spi, ss)
 display.write_to_buffer_with_dots('1234.56.78')
 display.display()
+
+************************************************
