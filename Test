@@ -1,3 +1,28 @@
-Editing test
-Fix this
-this was on my phone!!!
+read from Distance sensor (Jonboan?):
+
+
+
+
+
+
+write to 8 digit 7 segment display (NoIDidntHackU):
+Schematic:
+schematic7sgmnt.png
+
+********************REQUIRED********************
+MicroPython library for MAX7219 + 8 x 7digit display boards.
+
+Download the max7219_8digit.py library
+
+Open the RPi Pico as drive, and then copy the library into root directory.
+
+The library provides
+
+-- Initializing the device
+
+-- Set intensity of the device
+
+-- Write To Buffer functionality
+
+-- Send the buffer to MAX7219 device for further processing.
+************************************************
